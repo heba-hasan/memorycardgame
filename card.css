@@ -1,0 +1,81 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 67, 67);
+  background-image: url("images/0a5dd6df836a9d17dc9618b37b149b5c.jpg");
+  background-size: cover;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20vh, 1fr)); /* Adjust minmax values */
+  grid-gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  padding-top: 90%; /* Adjust padding-top to make the cards smaller */
+  background-color: white;
+  background-image: url("images/e9ddcfb2359a90e34b61e5604b8d364e.jpg");
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+.item img {
+  border-radius: 20px;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  backface-visibility: hidden;
+  transform: rotateY(180deg); /* Initially rotate the hidden image */
+  transition: transform 0.5s ease;
+}
+/* 
+.item::after
+{
+content: "";
+position: absolute;
+inset: 0;
+opacity: 0.3;
+background: violet;
+transition: 0.25s;
+transform: rotateY(0deg);
+
+} */
+
+div
+{
+  color: rgb(229, 36, 100);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    text-align: center;
+    /* background-color: rgb(178, 131, 109);
+   border-radius: 20px; */
+  
+}
+button
+{
+    margin: 20px;
+    border: transparent;
+    background-color: rgb(229, 36, 100);
+border-radius: 10px;
+padding: 10px;
+color: aliceblue;
+height: 40px;
+width: 100px;
+
+
+}
